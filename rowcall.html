@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+        .col100 {
+            background-color: aqua;
+            border: 2px solid black;
+            padding: 20px;
+            flex: 100%;
+        }
+
+        .col33 {
+            flex: 33%;
+            border: 2px solid black;
+            padding: 20px;
+
+        }
+
+        .col50 {
+            flex: 50%;
+            border: 2px solid black;
+            padding: 20px;
+
+        }
+
+        .col25 {
+            flex: 25%;
+            border: 2px solid black;
+            padding: 20px;
+
+        }
+
+        .col40 {
+            flex: 33%;
+            border: 2px solid black;
+            padding: 20px;
+        }
+
+        @media(max-width:900px) {
+
+            .col100,
+            .col50,
+            .col33 {
+                flex: 100%;
+            }
+        }
+
+        @media(max-width:900px) {
+            .col25 {
+                flex: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Responsive Flex</h1>
+    <p>we ste the flex ratio in this example</p>
+    <p>resize the browser window</p>
+    <div class="container">
+        <div class="col100">1</div>
+        <div class="col33">2</div>
+        <div class="col33">3</div>
+        <div class="col40">4</div>
+        <div class="col100">5</div>
+        <div class="col50">6</div>
+        <div class="col50">7</div>
+        <div class="col25">8</div>
+        <div class="col25">9</div>
+        <div class="col25">10</div>
+        <div class="col25">11</div>
+        <div class="col100">12</div>
+    </div>
+</body>
+
+</html>

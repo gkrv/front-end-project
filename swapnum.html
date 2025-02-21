@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript</title>
+        <style>
+            body {
+              background-color:darkkhaki;
+            }
+            
+            p {
+                color: aqua;
+              font-family: verdana;
+              font-size: 20px;
+              text-align: center;
+            
+            }
+            
+            </style>
+    </head>
+    <body>
+        <p id="p1">this is the first para</p>
+        <p id="p2">this is the second para</p>
+        <p id="p3">this is the third para</p>
+        <p id="p4">this is the fourth para</p>
+        <center><button onclick="swap();">1-4</button></center>
+        <center><button onclick="change()">change content</button></center>
+    </body>
+    
+</html>
+<script type="text/javascript">
+    function swap()
+    {
+        var temp=document.getElementById('p1').innerHTML;
+        document.getElementById('p1').innerHTML=document.getElementById('p4').innerHTML;
+        document.getElementById('p4').innerHTML=temp;
+    }
+
+    function change()
+    {
+        name=prompt("enter your name");
+        document.getElementById('p3').innerHTML="hello "+name+" how are you";
+    }
+</script>
